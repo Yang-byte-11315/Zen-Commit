@@ -1,0 +1,28 @@
+colorama(색깔을 입히고 싶으면 쓰는 모듈)
+requests(외부 장치와 연결할 때 쓰는 것)
+
+# 실제 하드웨어 연결 시 사용하는 코드 예시
+import asyncio
+from bleak import BleakClient # 블루투스 라이브러리
+
+# 표준 심박수 서비스 UUID (전세계 공통)
+HEART_RATE_UUID = "00002a37-0000-1000-8000-00805f9b34fb"
+DEVICE_ADDRESS = "AA:BB:CC:DD:EE:FF" # 네 기기의 맥 주소
+
+class BioMonitor:
+    def __init__(self):
+        self.bpm = 0
+
+    async def connect_and_read(self):
+        # 1. 블루투스 기기 연결
+        async with BleakClient(DEVICE_ADDRESS) as client:
+            # 2. 데이터 읽어오기
+            data = await client.read_gatt_char(HEART_RATE_UUID)
+            # 3. 데이터 파싱 (바이트 -> 숫자 변환)
+            self.bpm = data[1] 
+            return self.bpm
+
+    def get_heart_rate(self):
+        
+        return asyncio.run(self.connect_and_read())
+    #원래 bio_api의 코드였으나, 평가자의 설정 환경을 몰라서 혹시 궁금할까봐 남깁니다.
