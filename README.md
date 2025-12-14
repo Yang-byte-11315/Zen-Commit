@@ -26,7 +26,7 @@ Zen-Commit/
 
 ```bash
 python demo.py
-
+'''
 ##  개발 과정에서의 시행착오 
 
 1. Git Hook 권한 문제: 처음에 `install.py`를 만들었는데 실행이 안 돼서 한참 헤맸습니다. 알고 보니 윈도우랑 맥에서 파일 권한(chmod) 주는 방식이 달라서, 파이썬의 `os.chmod`를 사용해서 해결했습니다.
@@ -39,12 +39,6 @@ python demo.py
 4. 처음에 생각한 코드는 웨어러블 데이터를 받아서 실시간으로 만드는 프로그램이었는데 git이 설치가 안 되어 있으면 안되서
 
    그냥 demo.py 만들어서 진행했습니다.
-
-
-
-
-
-
 ![화면 캡처 2025-12-14 150546](https://github.com/user-attachments/assets/a6296a74-0999-4537-ac5a-79bdadcace23)
 
 
@@ -53,6 +47,7 @@ python demo.py
 
 ![화면 캡처 2025-12-14 150604](https://github.com/user-attachments/assets/d3b38e06-069a-409a-905e-75e94778e1ca)
 
+'''
 
 
 
