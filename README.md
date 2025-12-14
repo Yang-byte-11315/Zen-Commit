@@ -24,9 +24,9 @@ Zen-Commit/
 ## 3초 만에 실행하기 (Simulation Mode)
 터미널(CMD, PowerShell, VS Code)에서 아래 명령어를 입력하세요. visualStudio에서는 위에 ...부분에서 terminal을 찾고 새로운 것에다가 아래의 코드 입력하기
 
-```bash
+bash
 python demo.py
-'''
+
 ##  개발 과정에서의 시행착오 
 
 1. Git Hook 권한 문제: 처음에 `install.py`를 만들었는데 실행이 안 돼서 한참 헤맸습니다. 알고 보니 윈도우랑 맥에서 파일 권한(chmod) 주는 방식이 달라서, 파이썬의 `os.chmod`를 사용해서 해결했습니다.
@@ -47,7 +47,8 @@ python demo.py
 
 ![화면 캡처 2025-12-14 150604](https://github.com/user-attachments/assets/d3b38e06-069a-409a-905e-75e94778e1ca)
 
-'''
+
+
 
 
 
