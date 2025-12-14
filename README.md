@@ -39,7 +39,7 @@ python demo.py
 4. 처음에 생각한 코드는 웨어러블 데이터를 받아서 실시간으로 만드는 프로그램이었는데 git이 설치가 안 되어 있으면 안되서
 
    그냥 demo.py 만들어서 진행했습니다.
-'''
+
 
 
 
@@ -52,7 +52,8 @@ python demo.py
 
 
 ![화면 캡처 2025-12-14 150604](https://github.com/user-attachments/assets/d3b38e06-069a-409a-905e-75e94778e1ca)
-'''
+
+
 
 
 
