@@ -24,7 +24,7 @@ Zen-Commit/
 ## 3초 만에 실행하기 (Simulation Mode)
 터미널(CMD, PowerShell, VS Code)에서 아래 명령어를 입력하세요. visualStudio에서는 위에 ...부분에서 terminal을 찾고 새로운 것에다가 아래의 코드 입력하기
 
-bash
+
 python demo.py
 
 ##  개발 과정에서의 시행착오 
@@ -46,6 +46,7 @@ python demo.py
 
 
 ![화면 캡처 2025-12-14 150604](https://github.com/user-attachments/assets/d3b38e06-069a-409a-905e-75e94778e1ca)
+
 
 
 
